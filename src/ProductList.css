@@ -39,6 +39,17 @@ body {
    
 }
 
+.category-container {
+    display: flex;
+    justify-content: center;
+}
+
+.category {
+    margin-top: 5px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
 /* Product Grid */
 .product-grid {
     display:flex;
