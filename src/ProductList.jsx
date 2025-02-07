@@ -3,7 +3,7 @@ import './ProductList.css'
 import CartItem from './CartItem';
 import { addItem } from './CartSlice';
 import { useDispatch, useSelector } from 'react-redux';
-function ProductList() {
+function ProductList({showLandingSite}) {
     const dispatch = useDispatch();
     const [showCart, setShowCart] = useState(false); 
     const [showPlants, setShowPlants] = useState(false); // State to control the visibility of the About Us page
@@ -272,7 +272,7 @@ const handlePlantsClick = (e) => {
             <div className="tag">
                <div className="luxury">
                <img src="https://cdn.pixabay.com/photo/2020/08/05/13/12/eco-5465432_1280.png" alt="" />
-               <a href="/" style={{textDecoration:'none'}}>
+               <a href="#" onClick={(e) => showLandingSite()} style={{textDecoration:'none'}}>
                         <div>
                     <h3 style={{color:'white'}}>Paradise Nursery</h3>
                     <i style={{color:'white'}}>Where Green Meets Serenity</i>
